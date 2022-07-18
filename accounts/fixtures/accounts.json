@@ -1,0 +1,40 @@
+[
+    {
+        "model": "accounts.account",
+        "pk": 1,
+        "fields": {
+            "name": "conta 1",
+            "created_at": "2022-07-16T15:03:33Z",
+            "active": true,
+            "users": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "accounts.account",
+        "pk": 2,
+        "fields": {
+            "name": "conta 2",
+            "created_at": "2022-07-16T15:03:45Z",
+            "active": true,
+            "users": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "accounts.account",
+        "pk": 3,
+        "fields": {
+            "name": "conta 3",
+            "created_at": "2022-07-16T15:05:04Z",
+            "active": true,
+            "users": [
+                3
+            ]
+        }
+    }
+]
