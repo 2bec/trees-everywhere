@@ -1,0 +1,9 @@
+{% if trees_list %}
+<ul>
+  {% for tree in trees_list %}
+  <li><a href="/trees/{{ tree.id }}/">{{ tree.name }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No trees are available.</p>
+{% endif %}
