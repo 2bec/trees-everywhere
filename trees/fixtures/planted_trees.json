@@ -1,0 +1,77 @@
+[{
+    "model": "trees.plantedtree",
+    "pk": 1,
+    "fields": {
+        "age": 15,
+        "planted_at": "2022-07-16T15:07:55Z",
+        "user": 2,
+        "tree": 1,
+        "account": 1
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 2,
+    "fields": {
+        "age": 5,
+        "planted_at": "2022-07-16T15:08:10Z",
+        "user": 1,
+        "tree": 2,
+        "account": 1
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 3,
+    "fields": {
+        "age": 0,
+        "planted_at": "2022-07-16T15:08:24Z",
+        "user": 3,
+        "tree": 3,
+        "account": 3
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 4,
+    "fields": {
+        "age": 67,
+        "planted_at": "2022-07-16T17:53:21.456Z",
+        "user": 3,
+        "tree": 2,
+        "account": 2
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 5,
+    "fields": {
+        "age": 2,
+        "planted_at": "2022-07-16T17:59:19.285Z",
+        "user": 3,
+        "tree": 2,
+        "account": 2
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 6,
+    "fields": {
+        "age": 9,
+        "planted_at": "2022-07-16T17:59:41.643Z",
+        "user": 3,
+        "tree": 2,
+        "account": 2
+    }
+},
+{
+    "model": "trees.plantedtree",
+    "pk": 7,
+    "fields": {
+        "age": 82,
+        "planted_at": "2022-07-16T17:59:55.428Z",
+        "user": 3,
+        "tree": 3,
+        "account": 1
+    }
+}]

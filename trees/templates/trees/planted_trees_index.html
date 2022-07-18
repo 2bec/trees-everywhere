@@ -1,0 +1,41 @@
+{% extends "base.html" %} 
+
+{% load static %}
+
+
+{% block navbar_my_planted_tree_by_accounts_active %}
+  {% if accounts %} active {% endif %}
+{% endblock %}
+
+{% block navbar_my_planted_tree_active %}
+  {% if not accounts %} active {% endif %}
+{% endblock %}
+
+{% block content %}
+<h1>Planted Trees</h1>
+<h3>by {% if accounts %} {{ accounts }} {% else %} {{ user.username }} {% endif %}</h3>
+  {% if planted_trees_list %}
+    <div class="row row-cols-4">
+    {% for planted_tree in planted_trees_list %}
+    <div class="col-sm-3">
+      <div class="card mt-2" >
+        <img src="{% static 'trees/images/default-plant.png' %}" class="img-thumbnail border-0 mx-auto d-block" alt="{{ planted_tree.tree.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ planted_tree.tree.name }}</h5>
+          <p class="card-text">{{ planted_tree.tree.scientific_name }}</p>
+          <a href={% url 'planted-tree-detail' pk=planted_tree.id %} class="btn btn-primary">
+            Details
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    </div>
+  {% else %}
+    <div class="card">
+      <div class="card-body">
+        No planted trees are available.
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

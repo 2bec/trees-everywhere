@@ -1,0 +1,24 @@
+[{
+    "model": "trees.tree",
+    "pk": 1,
+    "fields": {
+        "name": "Cajuaçu",
+        "scientific_name": "Anacardium Giganteum"
+    }
+},
+{
+    "model": "trees.tree",
+    "pk": 2,
+    "fields": {
+        "name": "Andiroba",
+        "scientific_name": "Carapa Guianensis"
+    }
+},
+{
+    "model": "trees.tree",
+    "pk": 3,
+    "fields": {
+        "name": "Maçaranduba",
+        "scientific_name": "Manikara Huberi"
+    }
+}]
