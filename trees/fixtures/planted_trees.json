@@ -6,6 +6,8 @@
         "planted_at": "2022-07-16T15:07:55Z",
         "user": 2,
         "tree": 1,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 1
     }
 },
@@ -17,6 +19,8 @@
         "planted_at": "2022-07-16T15:08:10Z",
         "user": 1,
         "tree": 2,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 1
     }
 },
@@ -28,6 +32,8 @@
         "planted_at": "2022-07-16T15:08:24Z",
         "user": 3,
         "tree": 3,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 3
     }
 },
@@ -39,6 +45,8 @@
         "planted_at": "2022-07-16T17:53:21.456Z",
         "user": 3,
         "tree": 2,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 2
     }
 },
@@ -50,6 +58,8 @@
         "planted_at": "2022-07-16T17:59:19.285Z",
         "user": 3,
         "tree": 2,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 2
     }
 },
@@ -61,6 +71,8 @@
         "planted_at": "2022-07-16T17:59:41.643Z",
         "user": 3,
         "tree": 2,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 2
     }
 },
@@ -72,6 +84,8 @@
         "planted_at": "2022-07-16T17:59:55.428Z",
         "user": 3,
         "tree": 3,
+        "latitude": -23.5489,
+        "longitude": -46.6388,
         "account": 1
     }
 }]
