@@ -14,11 +14,11 @@
 1. Load some sample data: `python manage.py loaddata users accounts trees planted_trees`
 1. Run app: `python manage.py runserver`
 
-### Access admin
+### Accessing admin
 1. Go to `http://127.0.0.1:8000/admin`
 1. For username `admin` and password `Admin-123`
 
-### Access web
+### Accessing web
 1. Go to `http://127.0.0.1:8000`
 1. Make your login. You can create some user in the admin or use default users created with the `loaddata` command
 1. Default users:
@@ -26,6 +26,16 @@
     * username: `teste-2`, password: `Admin-123`
 
 Each of the users already has one or more trees planted. You can plant more trees clicking the button `Plant a Tree` after login.
+
+### Accessing API
+
+```
+# first you need to get a token for your user
+curl -X POST http://127.0.0.1:8000/users/token/ -d "username=teste-1&password=Admin-123"
+
+# get all planted trees for the logged user
+curl -X GET http://127.0.0.1:8000/api/v1/trees/planted/ --header 'Authorization: Token <token>'
+```
 
 ### About tests
 1. I preferred to use Django TestCase and fixtures
