@@ -1,0 +1,29 @@
+name: PR Quality Assurance
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  quality_assurance:
+    name: Quality Assurance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.10.5
+
+      - name: Install Dependencies
+        run: make install
+
+      - name: Install Dev Dependencies
+        run: make install-dev
+
+      - name: Lint
+        run: make lint
