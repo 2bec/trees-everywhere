@@ -11,3 +11,7 @@ install-dev:
 lint:
 	make clean
 	flake8 .
+
+test:
+	make clean
+	python manage.py test
