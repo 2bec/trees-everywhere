@@ -11,6 +11,16 @@
 1. Load some sample data: `python manage.py loaddata users accounts trees planted_trees`
 1. Run app: `python manage.py runserver`
 
+### Accessing API
+
+```
+# first you need to get a token for your user
+curl -X POST http://127.0.0.1:8000/users/token/ -d "username=teste-1&password=Admin-123"
+
+# get all planted trees for the logged user
+curl -X GET http://127.0.0.1:8000/api/v1/trees/planted/ --header 'Authorization: Token <token>'
+```
+
 ## Contributing
 
 ### Changes
