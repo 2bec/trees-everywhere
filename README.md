@@ -3,13 +3,29 @@
 
 - [Python 3.10](https://www.python.org/downloads/)
 
-## How to start
+## Contributing
+### Running it locally
+1. Clone the repository `git clone git@github.com:2bec/trees-everywhere.git && cd trees-everywhere`
 1. Create a virtual environment with python: `python3 -m venv venv`
 1. Activate this environment: `source venv/bin/activate`
 1. Install dependencies: `pip install -r requirements.txt`
+1. Install develop dependencies: `pip install -r requirements_dev.txt`
 1. Run migrations: `python manage.py migrate`
 1. Load some sample data: `python manage.py loaddata users accounts trees planted_trees`
 1. Run app: `python manage.py runserver`
+
+### Accessing admin
+1. Go to `http://127.0.0.1:8000/admin`
+1. For username `admin` and password `Admin-123`
+
+### Accessing web
+1. Go to `http://127.0.0.1:8000`
+1. Make your login. You can create some user in the admin or use default users created with the `loaddata` command
+1. Default users:
+    * username: `teste-1`, password: `Admin-123`
+    * username: `teste-2`, password: `Admin-123`
+
+Each of the users already has one or more trees planted. You can plant more trees clicking the button `Plant a Tree` after login.
 
 ### Accessing API
 
@@ -21,7 +37,15 @@ curl -X POST http://127.0.0.1:8000/users/token/ -d "username=teste-1&password=Ad
 curl -X GET http://127.0.0.1:8000/api/v1/trees/planted/ --header 'Authorization: Token <token>'
 ```
 
-## Contributing
+### About tests
+1. I preferred to use Django TestCase and fixtures
+
+To run all tests `make test`
+
+### Code Lint
+1. I preferred to use [Flake8](https://flake8.pycqa.org/en/latest/)
+
+To run lint `make lint`
 
 ### Changes
 
