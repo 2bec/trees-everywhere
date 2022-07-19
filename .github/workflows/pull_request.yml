@@ -1,0 +1,18 @@
+name: PR Quality Assurance
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  quality_assurance:
+    name: Quality Assurance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Lint
+        run: flake8 .
